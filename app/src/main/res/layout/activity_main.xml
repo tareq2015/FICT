@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/lectures"
+                android:background="@color/b2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/lectures"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:onClick="lecturesMethod"/>
+            <Button
+                android:id="@+id/contacts"
+                android:background="@color/b3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/contacts"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:onClick="contactsMethod"
+                />
+            <Button
+                android:id="@+id/calender"
+                android:background="@color/b4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/calender"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:onClick="calenderMethod"
+                />
+            <Button
+                android:id="@+id/timetable"
+                android:background="@color/b5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/timetable"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:onClick="timetableMethod"
+                />
+
+            <Button
+                android:id="@+id/about"
+                android:background="@color/b6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/about"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:onClick="aboutMethod"
+                />
+        </LinearLayout>
+
+
+</RelativeLayout>

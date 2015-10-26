@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tareqalgaori.fictapp" >
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".About"
+            android:screenOrientation="portrait"
+            android:label="@string/about"
+            android:parentActivityName="tareqalgaori.fictapp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tareqalgaori.fictapp.MainActivity"
+                />
+
+         </activity>
+
+        <activity android:name=".Calender"
+            android:screenOrientation="portrait"
+            android:label="@string/calender"
+            android:parentActivityName="tareqalgaori.fictapp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tareqalgaori.fictapp.MainActivity"
+                />
+
+        </activity>
+
+        <activity android:name=".Contacts"
+            android:screenOrientation="portrait"
+            android:label="@string/contacts"
+            android:parentActivityName="tareqalgaori.fictapp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tareqalgaori.fictapp.MainActivity"
+                />
+
+        </activity>
+
+        <activity android:name=".Lectures"
+            android:screenOrientation="portrait"
+            android:label="@string/lectures"
+            android:parentActivityName="tareqalgaori.fictapp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tareqalgaori.fictapp.MainActivity"
+                />
+
+        </activity>
+
+        <activity android:name=".Timetable"
+            android:screenOrientation="portrait"
+            android:label="@string/timetable"
+            android:parentActivityName="tareqalgaori.fictapp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tareqalgaori.fictapp.MainActivity"
+                />
+
+        </activity>
+
+    </application>
+
+</manifest>
